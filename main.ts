@@ -9,7 +9,11 @@ basic.forever(function () {
     } else if (input.buttonIsPressed(Button.B)) {
         radio.sendNumber(2)
         basic.showString("B")
-    } else if (input.buttonIsPressed(Button.AB)) {
+    }
+    basic.pause(200)
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.AB)) {
         radio.sendNumber(3)
         basic.showString("A+B")
     }
