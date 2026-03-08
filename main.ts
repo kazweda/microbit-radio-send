@@ -6,7 +6,11 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         radio.sendNumber(1)
         basic.showString("A")
-    } else if (input.buttonIsPressed(Button.B)) {
+    }
+    basic.pause(200)
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
         radio.sendNumber(2)
         basic.showString("B")
     }
